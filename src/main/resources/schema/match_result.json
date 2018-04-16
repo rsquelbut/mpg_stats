@@ -1,0 +1,567 @@
+{
+  "data": {
+    "stadium": "Vodka Stadium",
+    "dateMatch": 1516125600000,
+    "teamHome": {
+      "id": "mpg_team_qFGFF4IizdI$$mpg_user_468416",
+      "name": "Lokomotiv de Moscouille ",
+      "jersey": {
+        "id": 0,
+        "sponsor": 3,
+        "zones": {
+          "z1": "#ddff00"
+        }
+      },
+      "abbr": "LdM",
+      "coach": "Waloo",
+      "star": false,
+      "composition": "343",
+      "score": 0,
+      "ranking": ">100000",
+      "substitutes": [
+        {
+          "number": 12,
+          "substituteName": "Sankoh"
+        },
+        {
+          "number": 13,
+          "substituteName": "Congré",
+          "starterName": "El Hajjam",
+          "rating": 6
+        },
+        {
+          "number": 14,
+          "substituteName": "Lees-Melou",
+          "starterName": "Rony Lopes",
+          "rating": 6
+        },
+        {
+          "number": 15,
+          "substituteName": "Cyprien",
+          "starterName": "Ismaila Sarr",
+          "rating": 6
+        },
+        {
+          "number": 16,
+          "substituteName": "Ngom",
+          "starterName": "Mariano",
+          "rating": 5
+        },
+        {
+          "number": 17,
+          "substituteName": "El Ghazi",
+          "starterName": "Delort",
+          "rating": 5
+        },
+        {
+          "number": 18,
+          "substituteName": "Kawashima"
+        }
+      ],
+      "badges": [],
+      "mpguser": "468416"
+    },
+    "teamAway": {
+      "id": "mpg_team_qFGFF4IizdI$$mpg_user_468435",
+      "name": "hand hair nose FC",
+      "jersey": {
+        "id": 0,
+        "sponsor": 8,
+        "zones": {
+          "z1": "#000000"
+        }
+      },
+      "abbr": "HNF",
+      "coach": "sylvynio",
+      "star": false,
+      "composition": "442",
+      "score": 0,
+      "ranking": ">100000",
+      "substitutes": [
+        {
+          "number": 12,
+          "substituteName": "Gnagnon",
+          "starterName": "Mangane",
+          "rating": 5
+        },
+        {
+          "number": 13,
+          "substituteName": "Awaziem"
+        },
+        {
+          "number": 14,
+          "substituteName": "Draxler"
+        },
+        {
+          "number": 15,
+          "substituteName": "Sarr",
+          "starterName": "Salibur",
+          "rating": 6
+        },
+        {
+          "number": 16,
+          "substituteName": "Ponce"
+        },
+        {
+          "number": 17,
+          "substituteName": "de Preville",
+          "starterName": "Sio",
+          "rating": 5
+        },
+        {
+          "number": 18,
+          "substituteName": "Koubek"
+        }
+      ],
+      "badges": [],
+      "mpguser": "468435"
+    },
+    "bonus": {
+      "away": {
+        "type": 2,
+        "playerName": ""
+      }
+    },
+    "players": {
+      "home": [
+        {
+          "number": 1,
+          "id": "player_42766",
+          "name": "Gurtner",
+          "rating": 6,
+          "bonus": 0,
+          "teamid": "1430",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 1
+        },
+        {
+          "number": 2,
+          "id": "player_228291",
+          "name": "El Hajjam",
+          "rating": 6,
+          "bonus": 0,
+          "teamid": "1430",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 2
+        },
+        {
+          "number": 3,
+          "id": "player_143685",
+          "name": "Djiku",
+          "rating": 5,
+          "bonus": 0,
+          "teamid": "1028",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 2
+        },
+        {
+          "number": 4,
+          "id": "player_219924",
+          "name": "Diop",
+          "rating": 5,
+          "bonus": 0,
+          "teamid": "427",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 2
+        },
+        {
+          "number": 5,
+          "id": "player_232185",
+          "name": "Ismaila Sarr",
+          "rating": 5,
+          "bonus": 0,
+          "teamid": "150",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 3,
+          "substitute": {
+            "id": "player_151873",
+            "number": 15,
+            "name": "Cyprien",
+            "rating": 5,
+            "position": 3,
+            "teamid": "1395",
+            "bonus": 0,
+            "goals": {
+              "goal": 0,
+              "mpg": 0,
+              "own_goal": 0,
+              "cancel_goal": 0
+            }
+          }
+        },
+        {
+          "number": 6,
+          "id": "player_109653",
+          "name": "Rony Lopes",
+          "rating": 5,
+          "bonus": 0,
+          "teamid": "146",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 3,
+          "substitute": {
+            "id": "player_212325",
+            "number": 14,
+            "name": "Lees-Melou",
+            "rating": 5,
+            "position": 3,
+            "teamid": "1395",
+            "bonus": 0,
+            "goals": {
+              "goal": 0,
+              "mpg": 0,
+              "own_goal": 0,
+              "cancel_goal": 0
+            }
+          }
+        },
+        {
+          "number": 7,
+          "id": "player_95434",
+          "name": "Thauvin",
+          "rating": 6,
+          "bonus": 0,
+          "teamid": "144",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 3
+        },
+        {
+          "number": 8,
+          "id": "player_103119",
+          "name": "Meité",
+          "rating": 5,
+          "bonus": 0,
+          "teamid": "140",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 3
+        },
+        {
+          "number": 9,
+          "id": "player_73965",
+          "name": "Delort",
+          "rating": null,
+          "bonus": 0,
+          "teamid": "427",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 4,
+          "substitute": {
+            "id": "player_193488",
+            "number": 17,
+            "name": "El Ghazi",
+            "rating": 4,
+            "position": 4,
+            "teamid": "429",
+            "bonus": 0,
+            "goals": {
+              "goal": 0,
+              "mpg": 0,
+              "own_goal": 0,
+              "cancel_goal": 0
+            }
+          }
+        },
+        {
+          "number": 10,
+          "id": "player_108168",
+          "name": "Pléa",
+          "rating": 4,
+          "bonus": 0,
+          "teamid": "1395",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 4
+        },
+        {
+          "number": 11,
+          "id": "player_178347",
+          "name": "Mariano",
+          "rating": 5,
+          "bonus": 0,
+          "teamid": "143",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 4
+        }
+      ],
+      "away": [
+        {
+          "number": 1,
+          "id": "player_129487",
+          "name": "Maignan",
+          "rating": 5,
+          "bonus": 0.5,
+          "teamid": "429",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 1
+        },
+        {
+          "number": 2,
+          "id": "player_37832",
+          "name": "Morel",
+          "rating": 6,
+          "bonus": 1,
+          "teamid": "143",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 2
+        },
+        {
+          "number": 3,
+          "id": "player_51090",
+          "name": "Thiago Silva",
+          "rating": 6,
+          "bonus": 1,
+          "teamid": "149",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 2
+        },
+        {
+          "number": 4,
+          "id": "player_116406",
+          "name": "Marquinhos",
+          "rating": null,
+          "bonus": 1,
+          "teamid": "149",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 2,
+          "substitute": {
+            "id": "player_218705",
+            "number": 12,
+            "name": "Gnagnon",
+            "rating": 6,
+            "position": 2,
+            "teamid": "150",
+            "bonus": 0,
+            "goals": {
+              "goal": 0,
+              "mpg": 0,
+              "own_goal": 0,
+              "cancel_goal": 0
+            }
+          }
+        },
+        {
+          "number": 5,
+          "id": "player_43901",
+          "name": "Mangane",
+          "rating": null,
+          "bonus": 1,
+          "teamid": "153",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 2,
+          "substitute": {
+            "id": "player_222874",
+            "number": 13,
+            "name": "Awaziem",
+            "rating": 5,
+            "position": 2,
+            "teamid": "430",
+            "bonus": 0,
+            "goals": {
+              "goal": 0,
+              "mpg": 0,
+              "own_goal": 0,
+              "cancel_goal": 0
+            }
+          }
+        },
+        {
+          "number": 6,
+          "id": "player_55343",
+          "name": "Salibur",
+          "rating": 5,
+          "bonus": 0.5,
+          "teamid": "428",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 3,
+          "substitute": {
+            "id": "player_102760",
+            "number": 15,
+            "name": "Sarr",
+            "rating": 6,
+            "position": 3,
+            "teamid": "144",
+            "bonus": 0,
+            "goals": {
+              "goal": 0,
+              "mpg": 0,
+              "own_goal": 0,
+              "cancel_goal": 0
+            }
+          }
+        },
+        {
+          "number": 7,
+          "id": "player_167449",
+          "name": "Lemar",
+          "rating": 5,
+          "bonus": 0.5,
+          "teamid": "146",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 3
+        },
+        {
+          "number": 8,
+          "id": "player_120743",
+          "name": "Rabiot",
+          "rating": 5,
+          "bonus": 0.5,
+          "teamid": "149",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 3
+        },
+        {
+          "number": 9,
+          "id": "player_66957",
+          "name": "Cabella",
+          "rating": 4,
+          "bonus": 0.5,
+          "teamid": "152",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 3
+        },
+        {
+          "number": 10,
+          "id": "player_42484",
+          "name": "Sio",
+          "rating": 4,
+          "bonus": 0.5,
+          "teamid": "147",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 4,
+          "substitute": {
+            "id": "player_73879",
+            "number": 17,
+            "name": "de Preville",
+            "rating": 4,
+            "position": 4,
+            "teamid": "140",
+            "bonus": 0,
+            "goals": {
+              "goal": 0,
+              "mpg": 0,
+              "own_goal": 0,
+              "cancel_goal": 0
+            }
+          }
+        },
+        {
+          "number": 11,
+          "id": "player_181092",
+          "name": "Malcom",
+          "rating": 4,
+          "bonus": 0.5,
+          "teamid": "140",
+          "goals": {
+            "goal": 0,
+            "mpg": 0,
+            "own_goal": 0,
+            "cancel_goal": 0
+          },
+          "position": 4
+        }
+      ]
+    }
+  }
+}
