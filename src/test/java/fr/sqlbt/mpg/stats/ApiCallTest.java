@@ -7,8 +7,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 import javax.ws.rs.client.*;
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -17,7 +19,7 @@ public class ApiCallTest {
   private Client client;
   private WebTarget http;
   private String authorization =
-      "";
+          "";
 
   @Before
   public void init() {
@@ -45,20 +47,15 @@ public class ApiCallTest {
 
     // WHEN
     // THEN
-    Data data = result.getData();
-    assertThat(Compo.from(data.getTeamHome().getComposition()))
-        .isEqualTo(expected.getHome().getCompo());
-    assertThat(Ranking.from(data.getTeamHome().getRanking()))
-        .isEqualTo(expected.getHome().getRanking());
-    assertThat(Score.fromNumber(data.getTeamHome().getScore()))
-        .isEqualTo(expected.getHome().getScore());
+    TeamHome_ teamHome = result.getData().getTeamHome();
+    TeamAway_ teamAway = result.getData().getTeamAway();
+    assertThat(Compo.from(teamHome.getComposition())).isEqualTo(expected.getHome().getCompo());
+    assertThat(Ranking.from(teamHome.getRanking())).isEqualTo(expected.getHome().getRanking());
+    assertThat(Score.fromNumber(teamHome.getScore())).isEqualTo(expected.getHome().getScore());
 
-    assertThat(Compo.from(data.getTeamAway().getComposition()))
-        .isEqualTo(expected.getAway().getCompo());
-    assertThat(Ranking.from(data.getTeamAway().getRanking()))
-        .isEqualTo(expected.getAway().getRanking());
-    assertThat(Score.fromNumber(data.getTeamAway().getScore()))
-        .isEqualTo(expected.getAway().getScore());
+    assertThat(Compo.from(teamAway.getComposition())).isEqualTo(expected.getAway().getCompo());
+    assertThat(Ranking.from(teamAway.getRanking())).isEqualTo(expected.getAway().getRanking());
+    assertThat(Score.fromNumber(teamAway.getScore())).isEqualTo(expected.getAway().getScore());
   }
 
   @Test
@@ -80,4 +77,52 @@ public class ApiCallTest {
     assertThat(leagues).hasSize(2);
   }
 
+  @Test
+  public void should_get_all_matchs_with_result() {
+    // GIVEN
+    //    https://api.monpetitgazon.com/league/qFGFF4IizdI/calendar
+    LeagueId leagueId = LeagueId.from("qtleDMWJaW6");
+    // WHEN
+    // THEN
+    int currentMatchDay = getLastPlayedDay(leagueId);
+
+    List<MatchId> allPlayedMatch = IntStream.range(1, currentMatchDay)
+                                            .mapToObj(i -> getResultsForDay(leagueId, i))
+                                            .map(this::extractsMatchIds)
+                                            .flatMap(Collection::stream)
+                                            .collect(Collectors.toList());
+
+    assertThat(allPlayedMatch).hasSize(90);
+//    allPlayedMatch.forEach(System.out::println);
+  }
+
+  private LeagueCalendar getResultsForDay(LeagueId qFGFF4IizdI, int i) {
+    return http.path("league")
+               .path(qFGFF4IizdI.getId())
+               .path("calendar")
+               .path(String.valueOf(i))
+               .request()
+               .header("authorization", authorization)
+               .get(LeagueCalendar.class);
+  }
+
+  private int getLastPlayedDay(LeagueId qFGFF4IizdI) {
+    Results results = http.path("league")
+                          .path(qFGFF4IizdI.getId())
+                          .path("calendar")
+                          .request()
+                          .header("authorization", authorization)
+                          .get(LeagueCalendar.class)
+                          .getData().getResults();
+    int currentMatchDay = Math.toIntExact(results.getCurrentMatchDay());
+    boolean seasonIsFinished = results.getMaxMatchDay().longValue() == results.getCurrentMatchDay().longValue();
+    return seasonIsFinished ? currentMatchDay + 1 : currentMatchDay;
+  }
+
+  private List<MatchId> extractsMatchIds(LeagueCalendar calendar) {
+    return calendar.getData().getResults().getMatches().stream()
+                   .map(Match::getId)
+                   .map(MatchId::from)
+                   .collect(Collectors.toList());
+  }
 }

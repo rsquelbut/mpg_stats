@@ -2,32 +2,32 @@ package fr.sqlbt.mpg.stats.core;
 
 import java.util.Objects;
 
-public class LeagueId {
-
+public class MatchId {
     private final String id;
 
-    public LeagueId(String id) {
+    public MatchId(String id) {
         this.id = id;
     }
 
-    public static LeagueId from(String id) {
-        return new LeagueId(id);
-    }
-
-    public String getId() {
-        return id;
+    public static MatchId from(String id) {
+        return new MatchId(id);
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        LeagueId leagueId = (LeagueId) o;
-        return Objects.equals(id, leagueId.id);
+        MatchId matchId = (MatchId) o;
+        return Objects.equals(id, matchId.id);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    @Override
+    public String toString() {
+        return "MatchId{" + id + '}';
     }
 }
