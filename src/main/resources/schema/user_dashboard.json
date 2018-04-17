@@ -1,0 +1,28 @@
+{
+  "data": {
+    "leagues": [
+      {
+        "id": "qFGFF4IizdI",
+        "admin_mpg_user_id": "mpg_user_468073",
+        "current_mpg_user": "mpg_user_468049",
+        "name": "Liga NOuS",
+        "leagueStatus": 4,
+        "championship": 1,
+        "mode": 2,
+        "teamStatus": 2,
+        "url": "assets/public/img/league/4.jpg"
+      },
+      {
+        "id": "qtleDMWJaW6",
+        "admin_mpg_user_id": "mpg_user_468073",
+        "current_mpg_user": "mpg_user_468049",
+        "name": "beziers et les autres",
+        "leagueStatus": 5,
+        "championship": 1,
+        "mode": 1,
+        "teamStatus": 2,
+        "url": "assets/public/img/league/4.jpg"
+      }
+    ]
+  }
+}
